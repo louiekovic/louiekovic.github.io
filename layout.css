@@ -1,0 +1,181 @@
+/*  DEFAULT
+----------------------------------------------------------------------------------------*/
+html, body, #container, #left { height: 100%; }
+
+html {
+	background: #2e292f;
+	}
+
+#container {
+	padding: 0;
+	margin: 0;
+	}
+
+h1 {
+	width: 375px; height: 105px;
+	}
+	
+h1 a {
+	background: url('header.gif') 45px 0 no-repeat;
+	width: 375px; height: 105px;
+	}
+	
+#right {
+	min-height: 100%;
+	max-width: 1200px;
+	}
+	
+html {
+	overflow-y: auto;
+	}
+	
+#playlist {
+	display: block;
+	}
+	
+#mobile_playlist {
+	display: none;
+	}
+
+/* 6. LEFT
+----------------------------------------------------------------------------------------*/
+#left {
+	width: 375px;
+	background: #fcfcfc;
+	float: left;
+	text-align: left;
+	position: fixed;
+	overflow-y: auto;
+	overflow-x: hidden;
+	}
+	
+#left p {
+	padding: 1em 2em;
+	line-height: 1.6em;
+	}
+	
+h1 {
+	margin: 2.5em 0 1.4em 0;
+	}
+	
+.newsletter .address {
+	width: 300px;
+	}
+	
+.newsletter .address,
+.newsletter .submit {
+	margin: 0 2.5em;
+	position: absolute;
+	bottom: 3em;
+	}
+	
+#bottom {
+	position: fixed;
+	width: 375px;
+	bottom: 0;
+	left: 0;
+	}
+	
+#social {
+	margin: 0 0 0 2.7em;
+	position: absolute;
+	bottom: 4.5em;
+	}
+
+
+/* 7. RIGHT
+----------------------------------------------------------------------------------------*/
+#right {
+	background: #2e292f;
+	margin-left: 375px;
+	padding: 2em;
+	}
+
+.caption {
+	background: #1b1b1b;
+	color: #aaa;
+	}
+	
+.vid-container {
+	position: relative;
+	padding-bottom: 39.375%;
+	height: 0;
+	background: #000;
+	}
+
+.vid-container iframe,
+.vid-container object,
+.vid-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 70%;
+	height: 100%;
+	}
+	
+.playlist {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 30%;
+	height: 100%;
+	}
+	
+#photo {
+	background: url('photo_l.jpg');
+	background-size: cover;
+	margin-top: 2em;
+	}
+
+/* BREAKPOINT 1
+----------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 900px) {
+
+h1 {
+	margin: 1.4em 0 1.4em 0;
+	}
+	
+h1 a {
+	background: url('header.gif') 12px 0 no-repeat;
+	}
+	
+#social {
+	margin-left: 0.8em;
+	}
+
+#left,
+#bottom {
+	width: 300px;
+	}
+
+#left p {
+	padding: 1.5em;
+	font-size: 0.85em;
+	}
+	
+.newsletter .address {
+	width: 210px;
+	}
+	
+#right {
+	padding: 1em;
+	margin-left: 300px;
+	}
+	
+#photo {
+	background: url('photo_m.jpg');
+	background-size: cover;
+	margin-top: 1.5em;
+	}
+	
+}
+
+/* BREAKPOINT 2
+----------------------------------------------------------------------------------------*/
+@media only screen and (max-height: 650px) {
+
+#left p {
+	font-size: 0.85em;
+	}
+
+}
