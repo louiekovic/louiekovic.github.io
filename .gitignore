@@ -1,43 +1,64 @@
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
+node_modules
+npm-debug.log
+dist
+.tmp
+.sass-cache
+app/bower_components
+test/bower_components
+.idea
+app/styles/*.css
+*.swp
+test/visual/screenshots
+*.css.map
 
-# Folder config file
-Desktop.ini
+# Old files that should not appear again if someone pushes them
+app/scripts/libs/remotestorage.js
+app/scripts/apps/settings/show/encryptView.js
+app/scripts/apps/settings/show/encryptTemplate.html
+app/scripts/helpers/syncStatus.js
 
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
+# Phonegap-cli specific
+# Thanks for yeoman generator-phonegap
+#########################
+platforms
+phonegap
+releases
+.cordova
 
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
 
-# Windows shortcuts
-*.lnk
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
 
-# =========================
-# Operating System Files
-# =========================
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
 
-# OSX
-# =========================
-
+# OS generated files #
+######################
 .DS_Store
-.AppleDouble
-.LSOverride
-
-# Thumbnails
+.DS_Store?
 ._*
-
-# Files that might appear on external disk
 .Spotlight-V100
 .Trashes
-
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
+ehthumbs.db
+Thumbs.db
